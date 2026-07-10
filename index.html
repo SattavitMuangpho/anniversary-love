@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Anniversary ❤️</title>
+<link rel="icon" href="assets/images/photo1.jpg">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="stars"></canvas>
+<canvas id="heartCanvas"></canvas>
+<div id="cursorGlow"></div>
+
+<div id="loading">
+  <div class="loader">
+    <div class="loaderHeart"></div>
+    <div class="loadingText">Loading Love...</div>
+  </div>
+</div>
+
+<section id="loginPage" class="page ">
+<div class="glass centerBox">
+<h1>❤️ Happy Anniversary ❤️</h1>
+<p>กรอกรหัสของเรา</p>
+<input id="password" type="password" maxlength="8" placeholder="DDMMYYYY">
+<button id="unlockBtn">Unlock 💌</button>
+<p id="hint"></p>
+</div>
+</section>
+
+<section id="letterPage" class="page hidden">
+<div class="scene">
+<div class="envelope" id="envelope">
+<div class="shadow"></div><div class="back"></div><div class="left"></div><div class="right"></div><div class="bottom"></div><div class="top"></div>
+<div class="paper"><div class="paperContent"><h2>💌</h2><button id="openLetter">เปิดจดหมาย</button></div></div>
+</div></div></section>
+
+<section id="messagePage" class="page hidden">
+<div class="glass card">
+<div class="leftSide">
+<h2>ถึงคนที่เค้ารักที่สุด ❤️</h2>
+<div id="typewriter"></div>
+<div id="signature">Love You Forever 🤍</div>
+<button id="memoryButton" class="nextButton">ความทรงจำ ❤️</button>
+</div>
+<div class="rightSide">
+<div class="gallery"><img id="slideImage" src="assets/images/photo1.jpg" alt="photo"></div>
+</div></div></section>
+
+<section id="memoryPage" class="page hidden">
+<div class="memoryBox">
+<h2>📸 ความทรงจำของเรา</h2>
+<div class="timeline">
+<div class="memoryItem"><div class="memoryContent"><div class="memoryDate">11 มิถุนายน 2569</div><h3>วันแรกของเรา ❤️</h3><p>เป็นวันที่มีความสุขที่สุด ขอบคุณที่เข้ามาในชีวิตนะ</p></div></div>
+</div>
+<button id="finalButton" class="nextButton">ไปหน้าสุดท้าย ❤️</button>
+</div></section>
+<section id="finalPage" class="page hidden">
+<div class="finalCard">
+<h1>❤️ Happy Anniversary ❤️</h1>
+<p>ขอให้เราอยู่ด้วยกันไปนาน ๆ รักเธอที่สุด 🤍</p>
+<div class="bigHeart"></div>
+<div class="loveCounter">
+<div class="counterBox"><span id="loveYear">0</span><small>ปี</small></div>
+<div class="counterBox"><span id="loveMonth">0</span><small>เดือน</small></div>
+<div class="counterBox"><span id="loveDay">0</span><small>วัน</small></div>
+<div class="counterBox"><span id="loveHour">0</span><small>ชม.</small></div>
+<div class="counterBox"><span id="loveMinute">0</span><small>นาที</small></div>
+<div class="counterBox"><span id="loveSecond">0</span><small>วิ</small></div>
+</div>
+<button class="replay">เล่นใหม่</button>
+</div></section>
+
+<button class="musicButton" aria-label="เปิดหรือปิดเพลง">🎵</button>
+<audio id="music" loop><source src="assets/music/anniversary.mp3" type="audio/mpeg"></audio>
+<audio id="openSound"><source src="assets/sounds/open.mp3" type="audio/mpeg"></audio>
+<audio id="paperSound"><source src="assets/sounds/paper.mp3" type="audio/mpeg"></audio>
+<audio id="clickSound"><source src="assets/sounds/click.mp3" type="audio/mpeg"></audio>
+
+<button class="secretButton" aria-label="ข้อความลับ">❤️</button>
+<div class="secretMessage"><h3>Secret ❤️</h3><p>ไม่ว่าจะผ่านไปกี่ปี ก็จะรักเธอคนเดียว</p></div>
+
+<script src="script.js"></script>
+</body>
+</html>
